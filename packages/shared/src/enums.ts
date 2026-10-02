@@ -1,0 +1,114 @@
+export enum Role {
+  SUPER_ADMIN = 'SUPER_ADMIN',
+  ADMIN = 'ADMIN',
+  MANAGER = 'MANAGER',
+  AGENT = 'AGENT',
+  VIEWER = 'VIEWER',
+}
+
+export enum MembershipStatus {
+  ACTIVE = 'ACTIVE',
+  SUSPENDED = 'SUSPENDED',
+  INVITED = 'INVITED',
+}
+
+export enum InvitationStatus {
+  PENDING = 'PENDING',
+  ACCEPTED = 'ACCEPTED',
+  EXPIRED = 'EXPIRED',
+  REVOKED = 'REVOKED',
+}
+
+export enum EmployeeStatus {
+  DRAFT = 'DRAFT',
+  ACTIVE = 'ACTIVE',
+  PAUSED = 'PAUSED',
+  ARCHIVED = 'ARCHIVED',
+}
+
+export enum AIExecutionStatus {
+  QUEUED = 'QUEUED',
+  RUNNING = 'RUNNING',
+  COMPLETED = 'COMPLETED',
+  FAILED = 'FAILED',
+  CANCELLED = 'CANCELLED',
+}
+
+export enum EmployeeRole {
+  SALES_REP = 'SALES_REP',
+  CUSTOMER_SUPPORT = 'CUSTOMER_SUPPORT',
+  APPOINTMENT_SETTER = 'APPOINTMENT_SETTER',
+  SURVEY_COLLECTOR = 'SURVEY_COLLECTOR',
+  CUSTOM = 'CUSTOM',
+}
+
+export enum CallDirection {
+  INBOUND = 'INBOUND',
+  OUTBOUND = 'OUTBOUND',
+}
+
+export enum CallStatus {
+  QUEUED = 'QUEUED',
+  INITIATED = 'INITIATED',
+  RINGING = 'RINGING',
+  IN_PROGRESS = 'IN_PROGRESS',
+  COMPLETED = 'COMPLETED',
+  BUSY = 'BUSY',
+  NO_ANSWER = 'NO_ANSWER',
+  FAILED = 'FAILED',
+  CANCELLED = 'CANCELLED',
+}
+
+export enum LeadStatus {
+  NEW = 'NEW',
+  CONTACTED = 'CONTACTED',
+  QUALIFIED = 'QUALIFIED',
+  UNQUALIFIED = 'UNQUALIFIED',
+  INTERESTED = 'INTERESTED',
+  BOOKED = 'BOOKED',
+  DO_NOT_CALL = 'DO_NOT_CALL',
+}
+
+export enum CampaignStatus {
+  DRAFT = 'DRAFT',
+  SCHEDULED = 'SCHEDULED',
+  RUNNING = 'RUNNING',
+  PAUSED = 'PAUSED',
+  COMPLETED = 'COMPLETED',
+  CANCELLED = 'CANCELLED',
+}
+
+export enum MessageSender {
+  SYSTEM = 'SYSTEM',
+  USER = 'USER',
+  AI_EMPLOYEE = 'AI_EMPLOYEE',
+  HUMAN_AGENT = 'HUMAN_AGENT',
+}
+
+export enum MemoryType {
+  USER_PREFERENCE = 'USER_PREFERENCE',
+  FACT = 'FACT',
+  INSTRUCTION = 'INSTRUCTION',
+  SYSTEM_NOTE = 'SYSTEM_NOTE',
+}
+
+export enum MemorySource {
+  CONVERSATION = 'CONVERSATION',
+  EXPLICIT_ADMIN = 'EXPLICIT_ADMIN',
+  SYSTEM = 'SYSTEM',
+}
+
+export enum KnowledgeStatus {
+  PROCESSING = 'PROCESSING',
+  READY = 'READY',
+  FAILED = 'FAILED',
+}
+
+export enum DocumentStatus {
+  PENDING = 'PENDING',
+  PROCESSING = 'PROCESSING',
+  READY = 'READY',
+  FAILED = 'FAILED',
+}
+
+

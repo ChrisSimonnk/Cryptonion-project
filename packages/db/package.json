@@ -1,0 +1,26 @@
+{
+  "name": "@cryptonion/db",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "db:migrate": "node ./dist/migrate.js"
+  },
+  "dependencies": {
+    "@cryptonion/shared": "*",
+    "pg": "^8.11.5",
+    "pg-hstore": "^2.3.4",
+    "pgvector": "^0.2.0",
+    "sequelize": "^6.37.3",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@cryptonion/tsconfig": "*",
+    "@types/pg": "^8.11.6",
+    "@types/sequelize": "^4.28.20",
+    "typescript": "^5.4.5"
+  }
+}

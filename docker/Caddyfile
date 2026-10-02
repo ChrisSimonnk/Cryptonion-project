@@ -1,0 +1,26 @@
+:80 {
+    # Fastify API reverse proxy
+    handle /api/* {
+        reverse_proxy host.docker.internal:3001
+    }
+
+    # Swagger Documentation
+    handle /docs* {
+        reverse_proxy host.docker.internal:3001
+    }
+
+    # Python AI Service
+    handle /ai/* {
+        reverse_proxy host.docker.internal:8000
+    }
+
+    # Socket.IO Realtime WebSocket
+    handle /socket.io/* {
+        reverse_proxy host.docker.internal:3001
+    }
+
+    # Next.js Frontend
+    handle {
+        reverse_proxy host.docker.internal:3000
+    }
+}

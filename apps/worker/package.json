@@ -1,0 +1,23 @@
+{
+  "name": "@cryptonion/worker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@cryptonion/db": "*",
+    "@cryptonion/shared": "*",
+    "bullmq": "^5.8.5",
+    "dotenv": "^16.4.5",
+    "ioredis": "^5.4.1"
+  },
+  "devDependencies": {
+    "@cryptonion/tsconfig": "*",
+    "@types/node": "^20.14.10",
+    "tsx": "^4.16.0",
+    "typescript": "^5.4.5"
+  }
+}
